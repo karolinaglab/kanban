@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+    <children>
+        <TextField fx:id="titleField" layoutX="144.0" layoutY="36.0"/>
+        <Label layoutX="80.0" layoutY="40.0" text="Title"/>
+        <ComboBox fx:id="priority" layoutX="143.0" layoutY="80.0" prefWidth="150.0"/>
+        <Label layoutX="81.0" layoutY="84.0" text="Priority"/>
+        <Label layoutX="83.0" layoutY="128.0" text="Exp date"/>
+        <Button fx:id="addButton" layoutX="181.0" layoutY="329.0" mnemonicParsing="false" onAction="#addTask"
+                prefHeight="40.0" prefWidth="66.0" text="Add"/>
+        <DatePicker fx:id="datePicker" layoutX="143.0" layoutY="124.0" prefHeight="25.0" prefWidth="149.0"/>
+        <TextArea fx:id="details" layoutX="80.0" layoutY="168.0" prefHeight="141.0" prefWidth="268.0"/>
+    </children>
+</AnchorPane>
